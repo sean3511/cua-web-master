@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta name="keywords" content="金富發" />
+    <link rel="shortcut icon" href="images/logo_blue.png" type="image/x-icon">
+    <meta name="description" content="" />
+    <meta name="google" content="notranslate" />
+    <title>金富發</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+    <!-- 客服 -->
+    <div class="offcanvas-area">
+        <a class="service-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight" href="#">
+            <div class="service-btn__icon">
+                <img src="./images/service-icon.gif" alt="" class="icon-img">
+            </div>
+            <h5 class="service-btn__title">客服中心</h5>
+        </a>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">客服</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="wcr">
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border text-success" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="ms-2">連接客服中，請稍候</p>
+                </div>
+                <div class="wcr-list" style="display: none;">
+                    <div class="wcr-list__item">
+                        <div class="wcr-list__content wcr--left">
+                            <div class="list__item__avatar -round">
+                                <img class="avatar-img" src="https://i.pravatar.cc/150?img=24" alt="" />
+                            </div>
+                            <div class="list__item__content">
+                                <div class="stock-user">
+                                    <span class="stock-user__text">客服A</span>
+                                </div>
+                                <div class="stock-message">
+                                    <div class="stock-message__content">
+                                        您好，欢迎进入聊天室...
+                                    </div>
+                                    <div class="stock-message__time">
+                                        <span class="time-text">3:37 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wcr-list__item">
+                        <div class="wcr-system-message">3月13日 週五</div>
+                        <div class="wcr-list__content wcr--right">
+                            <div class="list__item__content">
+                                <div class="stock-message">
+                                    <div class="stock-message__content">
+                                        您好我有一些问题想要询问，关于奖金￥88888要如何取得呢?
+                                    </div>
+                                    <div class="stock-message__time">
+                                        <span class="time-text">3:37 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wcr-list__item">
+                        <div class="wcr-list__content wcr--left">
+                            <div class="list__item__avatar -round">
+                                <img class="avatar-img" src="https://i.pravatar.cc/150?img=24" alt="" />
+                            </div>
+                            <div class="list__item__content">
+                                <div class="stock-user">
+                                    <span class="stock-user__text">客服A</span>
+                                </div>
+                                <div class="stock-message">
+                                    <div class="wcr-stock">
+                                        <div class="wcr-stock__header">
+                                            <div class="header-title">
+                                                標題
+                                            </div>
+                                            <div class="header-subtitle">
+                                                副標題
+                                            </div>
+                                        </div>
+                                        <div class="wcr-stock__content">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, sint
+                                            omnis assumenda quas corrupti fugiat sunt voluptates aspernatur tempore,
+                                            vel obcaecati distinctio. Adipisci id quaerat veritatis molestiae iusto.
+                                            Odio, architecto!
+                                        </div>
+                                        <div class="wcr-stock__footer">
+                                            <div class="stock-btn">
+                                                <a href="javascript:void(0);"
+                                                    class="stock-btn__item stock-btn__item--disabled">
+                                                    <div class="item-text">按鈕disabled</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stock-message__time">
+                                            <span class="time-text">3:37 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wcr-list__item">
+                        <div class="wcr-list__content wcr--left">
+                            <div class="list__item__avatar -round">
+                                <img class="avatar-img" src="https://i.pravatar.cc/150?img=24" alt="" />
+                            </div>
+                            <div class="list__item__content">
+                                <div class="stock-user">
+                                    <span class="stock-user__text">客服B</span>
+                                </div>
+                                <div class="stock-message">
+                                    <div class="wcr-stock">
+                                        <div class="wcr-stock__header">
+                                            <div class="header-title">
+                                                標題
+                                            </div>
+                                            <div class="header-subtitle">
+                                                副標題
+                                            </div>
+                                        </div>
+                                        <div class="wcr-stock__content">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolore
+                                            qui neque veritatis, voluptas facilis culpa? Suscipit omnis, totam non
+                                            amet quia odio nam eligendi similique eaque minima dicta mollitia!
+                                        </div>
+                                        <div class="wcr-stock__footer">
+                                            <div class="stock-btn">
+                                                <a href="javascript:void(0);"
+                                                    class="stock-btn__item -primary rounded-pill btn-ripple"
+                                                    onclick="rippleBtn(event,this);">
+                                                    <div class="item-text">按鈕</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stock-message__time">
+                                        <span class="time-text">3:37 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <div class="wcr-footer">
+                        <div class="wcr-input">
+                            <input type="text" class="wcr-input__input">
+                            <!-- <span class="wcr-input-close__text">暂不开放聊天功能</span> -->
+                        </div>
+                        <a class="wcr-btn btn btn-primary rounded-pill btn-ripple" href="javascript:void(0)">送出</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 客服end -->
+    <!-- 忘記密碼彈窗 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">忘記密碼</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="col-sm-12 m-auto mt-3">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                忘記登入密碼
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                忘記提領密碼
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer row g-2">
+                    <div class="col">
+                        <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">取消</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary">送出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 忘記密碼彈窗end -->
+    <!-- 註冊成功 -->
+    <div class="modal fade regsuccess" id="exampleModal" tabindex="-1" data-bs-backdrop="static"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="regsuccess-popup">
+                    <div class="regsuccess-popup__body">
+                        <div class="regsuccess-info translate-middle-x">
+                            <div class="regsuccess-info__user">
+                                <div class="user-title">会员账号：</div>
+                                <div class="user-id">BBBBBB1234</div>
+                            </div>
+                            <div class="regsuccess-info__btn">
+                                <a class="btn-item" href="javascript:void(0);">
+                                    <div class="btn-item__icon">
+                                        <img src="./images/registration_info@2x.png" alt="" class="icon-img">
+                                    </div>
+                                    <div class="btn-item__title">
+                                        <span class="title-text">去完善资料</span>
+                                    </div>
+                                </a>
+                                <a class="btn-item" href="index.html">
+                                    <div class="btn-item__icon">
+                                        <img src="./images/registration_home@2x.png" alt="" class="icon-img">
+                                    </div>
+                                    <div class="btn-item__title">
+                                        <span class="title-text">前往游戏</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regsuccess-popup__footer">
+                        <a class="btn btn-primary rounded-pill btn-ripple" href="deposit.html">立即充值</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="login">
+        <div class="container-md h-100">
+            <div class="d-flex justify-content-center overflow-hidden h-100">
+                <div class="entry col-md-7 col-lg-4">
+                    <div class="entry__content">
+                        <div class="entry-brand">
+                            <div class="entry-brand__logo">
+                                <img src="./images/main_logo@3x.png" alt="" class="logo-icon">
+                            </div>
+                            <div class="entry-brand__info">
+                                <p class="info-text" id="info-text">尊贵的会员您好 - 欢迎您回来</p>
+                            </div>
+                        </div>
+                        <div class="entry-form">
+                            <div class="entry-form__main" id="form-main">
+                                <div class="entry-btn-rt entry-btn-rt--active" id="entry-btn-rt">
+                                    <div class="entry-btn-rt__icon"></div>
+                                    <div class="entry-btn-rt__text">注册新用户</div>
+                                </div>
+                                <div class="entry-btn-lf" id="entry-btn-lf">
+                                    <div class="entry-btn-lf__icon"></div>
+                                    <div class="entry-btn-lf__text">返回登录</div>
+                                </div>
+                                <!-- login in -->
+                                <div class="main-login main-login--active" id="login-form">
+                                    <div class="main-login__title" id="entry-title">登录</div>
+                                    <div class="com-cell">
+                                        <div class="com-cell__form -filled">
+                                            <div class="form-group">
+                                                <!-- el-icon自由更換 -->
+                                                <div class="el-icon -icon_user"></div>
+                                                <input type="text" class="el-input" placeholder="账号" minlength="5"
+                                                    maxlength="9" />
+                                                <div class="el-value">
+                                                    <span class="el-value__reveal el-value__reveal--off"></span>
+                                                    <span class="el-value__clear"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="com-cell__verify com-cell__verify--error">
+                                            <div class="verify-icon"></div>
+                                            <span class="verify-text">5-9位数字,小写字母</span>
+                                        </div>
+                                    </div>
+                                    <div class="com-cell">
+                                        <div class="com-cell__form -filled">
+                                            <div class="form-group">
+                                                <!-- el-icon自由更換 -->
+                                                <div class="el-icon -icon_password"></div>
+                                                <input type="password" class="el-input" placeholder="密码" minlength="6"
+                                                    maxlength="12" />
+                                                <div class="el-value">
+                                                    <span class="el-value__reveal el-value__reveal--off"></span>
+                                                    <span class="el-value__clear"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="com-cell__verify com-cell__verify--error">
+                                            <div class="verify-icon"></div>
+                                            <span class="verify-text">6-12位字符</span>
+                                        </div>
+                                    </div>
+                                    <div class="com-cell">
+                                        <div class="com-cell__form com-cell__form--invalid -filled">
+                                            <div class="form-group">
+                                                <!-- el-icon自由更換 -->
+                                                <div class="el-icon -icon_verification_code"></div>
+                                                <input type="number" class="el-input" placeholder="验证码" />
+                                                <div class="captcha">
+                                                    <img src="./images/captchaCode.png" class="captcha__img" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="com-cell__verify com-cell__verify--error">
+                                            <div class="verify-icon"></div>
+                                            <span class="verify-text">必填</span>
+                                        </div>
+                                    </div>
+                                    <div class="com-cell -row">
+                                        <div class="com-cell__check">
+                                            <input type="checkbox" id="scales" name="scales" class="check-checkbox" />
+                                            <label for="scales" class="check-text">記住密碼</label>
+                                        </div>
+                                        <a href="javascript:void(0)" class="com-cell__lf" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal2">
+                                            <span class="cell-text">忘記密碼？</span></a>
+                                    </div>
+                                    <div class="contact">
+                                        <a class="contact__btn" href="javascript:void(0);">
+                                            <div class="btn-icon"></div>
+                                            <div class="btn-text">联系客服</div>
+                                        </a>
+                                    </div>
+                                    <a class="btn btn-primary rounded-pill btn-ripple btn--disabled"
+                                        href="javascript:void(0);">会员登录</a>
+                                    <a class="try-btn" href="./index.html">先去逛逛</a>
+                                </div>
+                                <!-- sign in -->
+                                <div class="main-reg" id="reg-form" style="display:none;">
+                                    <div class="main-reg__title">注册</div>
+                                    <div class="com-cell">
+                                        <div class="com-cell__form -filled">
+                                            <div class="form-group">
+                                                <!-- el-icon自由更換 -->
+                                                <div class="el-icon -icon_user"></div>
+                                                <input type="text" class="el-input" placeholder="账号" minlength="5"
+                                                    maxlength="9" />
+                                                <div class="el-value">
+                                                    <span class="el-value__reveal el-value__reveal--off"></span>
+                                                    <span class="el-value__clear"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="com-cell__verify com-cell__verify--correct">
+                                            <div class="verify-icon"></div>
+                                            <span class="verify-text">格式正确</span>
+                                        </div>
+                                    </div>
+                                    <div class="com-cell">
+                                        <div class="com-cell__form -filled">
+                                            <div class="form-group">
+                                                <!-- el-icon自由更換 -->
+                                                <div class="el-icon -icon_password"></div>
+                                                <input type="password" class="el-input" placeholder="密码" minlength="6"
+                                                    maxlength="12" />
+                                                <div class="el-value">
+                                                    <span class="el-value__reveal el-value__reveal--off"></span>
+                                                    <span class="el-value__clear"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="com-cell__verify com-cell__verify--error">
+                                            <div class="verify-icon"></div>
+                                            <span class="verify-text">6-12位字符</span>
+                                        </div>
+                                    </div>
+                                    <div class="com-cell">
+                                        <div class="com-cell__form -filled">
+                                            <div class="form-group">
+                                                <!-- el-icon自由更換 -->
+                                                <div class="el-icon -icon_password"></div>
+                                                <input type="password" class="el-input" placeholder="确认密码" minlength="6"
+                                                    maxlength="12" />
+                                                <div class="el-value">
+                                                    <span class="el-value__reveal el-value__reveal--off"></span>
+                                                    <span class="el-value__clear"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="com-cell__verify com-cell__verify--error">
+                                            <div class="verify-icon"></div>
+                                            <span class="verify-text">需与密码相符</span>
+                                        </div>
+                                    </div>
+                                    <div class="com-cell">
+                                        <div class="com-cell__form -filled">
+                                            <div class="form-group">
+                                                <!-- el-icon自由更換 -->
+                                                <div class="el-icon -icon_qrcode"></div>
+                                                <input type="text" class="el-input" placeholder="邀请码" />
+                                                <div class="el-value">
+                                                    <span class="el-value__reveal el-value__reveal--off"></span>
+                                                    <span class="el-value__clear"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="com-cell__verify com-cell__verify--error">
+                                            <div class="verify-icon"></div>
+                                            <span class="verify-text">必填</span>
+                                        </div>
+                                    </div>
+                                    <div class="com-cell">
+                                        <div class="com-cell__check">
+                                            <input type="checkbox" name="scales" class="check-checkbox" checked />
+                                            <label for="scales" class="check-text">是否通過手機接收優惠訊息</label>
+                                        </div>
+                                    </div>
+                                    <div class="com-cell">
+                                        <div class="com-cell__check">
+                                            <input type="checkbox" name="scales" class="check-checkbox" />
+                                            <label for="scales" class="check-text">我已年滿18歲，並同意投注相關規範以及<a
+                                                    href="javascript:void(0)"
+                                                    onclick="showServiceTerms()">服務條款</a></label>
+                                        </div>
+                                    </div>
+                                    <div class="contact">
+                                        <a class="contact__btn" href="javascript:void(0);">
+                                            <div class="btn-icon"></div>
+                                            <div class="btn-text">联系客服</div>
+                                        </a>
+                                    </div>
+                                    <a class="btn btn-primary rounded-pill btn-ripple" href="javascript:void(0);"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">注册</a>
+                                </div>
+                                <!-- sign in end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        //popup-show/hide
+        function show() {
+            var x = document.getElementById('show');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+        function showServiceTerms() {
+            var x = document.getElementById('serviceTerms');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+        function entrySwitch() {
+            var rtbtn = document.getElementById('entry-btn-rt');
+            var lfbtn = document.getElementById('entry-btn-lf');
+            var formmain = document.getElementById('form-main');
+            var login = document.getElementById('login-form');
+            var signin = document.getElementById('reg-form');
+            var title = document.getElementById('info-text');
+            rtbtn.addEventListener('click', function () {
+                formmain.classList.add('entry-form__main--active');
+                lfbtn.classList.add('entry-btn-lf--active');
+                rtbtn.classList.remove('entry-btn-rt--active');
+                signin.style.display = 'block';
+                login.classList.remove('main-login--active');
+                login.style.display = 'none';
+                title.innerHTML = '欢迎成为我们的会员';
+                // setTimeout(function () {
+                //   login.style.display = 'none';
+                // }, 100);
+                setTimeout(function () {
+                    signin.classList.add('main-reg--active');
+                }, 200);
+            });
+            lfbtn.addEventListener('click', function () {
+                formmain.classList.remove('entry-form__main--active');
+                lfbtn.classList.remove('entry-btn-lf--active');
+                rtbtn.classList.add('entry-btn-rt--active');
+                login.style.display = 'block';
+                signin.classList.remove('main-reg--active');
+                signin.style.display = 'none';
+                title.innerHTML = '尊贵的会员您好 - 欢迎您回来';
+                // setTimeout(function () {
+                //   signin.style.display = 'none';
+                // }, 100);
+                setTimeout(function () {
+                    login.classList.add('main-login--active');
+                }, 200);
+            });
+        }
+        entrySwitch();
+    </script>
+</body>
+
+</html>

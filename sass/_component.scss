@@ -1,0 +1,37 @@
+.btn-tab {
+  width: 100%;
+  display: flex;
+  padding-top: $space-sm;
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 32%;
+    height: 56px;
+    border-radius: 12px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    color: #909abb;
+    font-size: 12px;
+    white-space: nowrap;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    &__text {
+      line-height: 1;
+    }
+    &--active {
+      color: #ffffff;
+      background-color: #4d8aff;
+      transition: 0.4s;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &--disabled {
+      background-color: #eceef4;
+      color: #909abb;
+      font-weight: normal;
+    }
+  }
+}

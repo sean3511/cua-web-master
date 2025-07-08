@@ -1,0 +1,13 @@
+@mixin animation-order(
+  $name: zoomIn,
+  $duration: 700ms,
+  $fill-mode: both,
+  $timing-function: ease-in-out,
+  $delay: 100ms
+) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-fill-mode: $fill-mode;
+  animation-timing-function: $timing-function;
+  animation-delay: calc(var(--animation-order) * #{$delay});
+}
