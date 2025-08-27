@@ -16,165 +16,55 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="stylesheets/main.css">
 </head>
-
 <body>
-    <!-- 客服 -->
-    <div class="offcanvas-area">
-        <a class="service-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight" href="#">
-            <div class="service-btn__icon">
-                <img src="./images/service-icon.gif" alt="" class="icon-img">
-            </div>
-            <h5 class="service-btn__title">客服中心</h5>
-        </a>
-    </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">客服</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="wcr">
-                <div class="d-flex justify-content-center">
-                    <div class="spinner-border text-success" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
-                    <p class="ms-2">連接客服中，請稍候</p>
-                </div>
-                <div class="wcr-list" style="display: none;">
-                    <div class="wcr-list__item">
-                        <div class="wcr-list__content wcr--left">
-                            <div class="list__item__avatar -round">
-                                <img class="avatar-img" src="https://i.pravatar.cc/150?img=24" alt="" />
-                            </div>
-                            <div class="list__item__content">
-                                <div class="stock-user">
-                                    <span class="stock-user__text">客服A</span>
-                                </div>
-                                <div class="stock-message">
-                                    <div class="stock-message__content">
-                                        您好，欢迎进入聊天室...
-                                    </div>
-                                    <div class="stock-message__time">
-                                        <span class="time-text">3:37 PM</span>
-                                    </div>
+    <div class="modal fade" id="error-message" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="w-75 m-auto">
+                        <!--warning-->
+                        <div class="dialog warning">
+                            <div class="dialog__body">
+                                <div class="xfe">
+                                    <div class="xfe__icon"></div>
+                                    <p class="xfe__title">警告</p>
+                                    <p class="xfe__text">请在弹出的网页上完成支付</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="wcr-list__item">
-                        <div class="wcr-system-message">3月13日 週五</div>
-                        <div class="wcr-list__content wcr--right">
-                            <div class="list__item__content">
-                                <div class="stock-message">
-                                    <div class="stock-message__content">
-                                        您好我有一些问题想要询问，关于奖金￥88888要如何取得呢?
-                                    </div>
-                                    <div class="stock-message__time">
-                                        <span class="time-text">3:37 PM</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wcr-list__item">
-                        <div class="wcr-list__content wcr--left">
-                            <div class="list__item__avatar -round">
-                                <img class="avatar-img" src="https://i.pravatar.cc/150?img=24" alt="" />
-                            </div>
-                            <div class="list__item__content">
-                                <div class="stock-user">
-                                    <span class="stock-user__text">客服A</span>
-                                </div>
-                                <div class="stock-message">
-                                    <div class="wcr-stock">
-                                        <div class="wcr-stock__header">
-                                            <div class="header-title">
-                                                標題
-                                            </div>
-                                            <div class="header-subtitle">
-                                                副標題
-                                            </div>
-                                        </div>
-                                        <div class="wcr-stock__content">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, sint
-                                            omnis assumenda quas corrupti fugiat sunt voluptates aspernatur tempore,
-                                            vel obcaecati distinctio. Adipisci id quaerat veritatis molestiae iusto.
-                                            Odio, architecto!
-                                        </div>
-                                        <div class="wcr-stock__footer">
-                                            <div class="stock-btn">
-                                                <a href="javascript:void(0);"
-                                                    class="stock-btn__item stock-btn__item--disabled">
-                                                    <div class="item-text">按鈕disabled</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="stock-message__time">
-                                            <span class="time-text">3:37 PM</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wcr-list__item">
-                        <div class="wcr-list__content wcr--left">
-                            <div class="list__item__avatar -round">
-                                <img class="avatar-img" src="https://i.pravatar.cc/150?img=24" alt="" />
-                            </div>
-                            <div class="list__item__content">
-                                <div class="stock-user">
-                                    <span class="stock-user__text">客服B</span>
-                                </div>
-                                <div class="stock-message">
-                                    <div class="wcr-stock">
-                                        <div class="wcr-stock__header">
-                                            <div class="header-title">
-                                                標題
-                                            </div>
-                                            <div class="header-subtitle">
-                                                副標題
-                                            </div>
-                                        </div>
-                                        <div class="wcr-stock__content">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolore
-                                            qui neque veritatis, voluptas facilis culpa? Suscipit omnis, totam non
-                                            amet quia odio nam eligendi similique eaque minima dicta mollitia!
-                                        </div>
-                                        <div class="wcr-stock__footer">
-                                            <div class="stock-btn">
-                                                <a href="javascript:void(0);"
-                                                    class="stock-btn__item -primary rounded-pill btn-ripple"
-                                                    onclick="rippleBtn(event,this);">
-                                                    <div class="item-text">按鈕</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="stock-message__time">
-                                        <span class="time-text">3:37 PM</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!--warning-->
                     </div>
                 </div>
-                <div class="mt-auto">
-                    <div class="wcr-footer">
-                        <div class="wcr-input">
-                            <input type="text" class="wcr-input__input">
-                            <!-- <span class="wcr-input-close__text">暂不开放聊天功能</span> -->
-                        </div>
-                        <a class="wcr-btn btn btn-primary rounded-pill btn-ripple" href="javascript:void(0)">送出</a>
-                    </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary rounded-pill btn-ripple"
+                        data-bs-dismiss="modal">確認</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- 客服end -->
+    <!-- error-message end -->
+    <div id="success-message" class="transfer-dialog" style="display: none;">
+        <div class="dialog-mask">
+            <!--success-->
+            <div class="dialog success">
+                <div class="dialog__body">
+                    <div class="xfe">
+                        <div class="xfe__icon"></div>
+                        <p class="xfe__title title">已成功提交</p>
+                        <p class="xfe__text text">请在弹出的网页上完成支付</p>
+                    </div>
+                </div>
+                <div class="dialog__body-footer">
+                    <a class="btn btn-primary rounded-pill btn-ripple" href="javascript:void(0)"
+                        onclick="closeSuccessMessage();">OK</a>
+                </div>
+            </div>
+            <!--success-->
+            <!--popup-->
+        </div>
+    </div>
     <!-- 忘記密碼彈窗 -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="forget-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -182,18 +72,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="col-sm-12 m-auto mt-3">
+                    <form class="col-sm-12 m-auto mt-3" id="forget-form">
                         <div class="form-check mb-3">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="forgetpassword" value="login" checked>
+                            <label class="form-check-label">
                                 忘記登入密碼
                             </label>
                         </div>
                         <div class="form-check mb-3">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                                checked>
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                忘記提領密碼
+                            <input class="form-check-input" type="radio" name="forgetpassword" value="withdrawal">
+                            <label class="form-check-label">
+                                忘記託售密碼
                             </label>
                         </div>
                     </form>
@@ -203,15 +92,40 @@
                         <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">取消</button>
                     </div>
                     <div class="col">
-                        <button type="button" class="btn btn-primary">送出</button>
+                        <button type="button" class="btn btn-primary" id="forget-button">送出</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- 忘記密碼彈窗end -->
+    <div id="toast" class="toast-popup" style="display: none;">
+        <div class="toast-popup__body">
+            <div class="toast-popup__icon">
+                <div class="toast-popup__icon__img -success"></div>
+            </div>
+            <div class="toast-popup__text text"></div>
+        </div>
+    </div>
+    <div id="danger-message" class="transfer-dialog" style="display: none;">
+        <div class="dialog-mask">
+            <div class="dialog danger">
+                <div class="dialog__body">
+                    <div class="xfe">
+                        <div class="xfe__icon"></div>
+                        <p class="xfe__title title"></p>
+                        <p class="xfe__text text"></p>
+                    </div>
+                </div>
+                <div class="dialog__body-footer">
+                    <a class="btn btn-primary rounded-pill btn-ripple link" href="">返回</a>
+                </div>
+            </div>
+            <!--popup-->
+        </div>
+    </div>
     <!-- 註冊成功 -->
-    <div class="modal fade regsuccess" id="exampleModal" tabindex="-1" data-bs-backdrop="static"
+    <div class="modal fade regsuccess" id="reg-modal" tabindex="-1" data-bs-backdrop="static"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -219,229 +133,291 @@
                     <div class="regsuccess-popup__body">
                         <div class="regsuccess-info translate-middle-x">
                             <div class="regsuccess-info__user">
-                                <div class="user-title">会员账号：</div>
+                                <div class="user-title">會員帳號: </div>
                                 <div class="user-id">BBBBBB1234</div>
                             </div>
                             <div class="regsuccess-info__btn">
-                                <a class="btn-item" href="javascript:void(0);">
+                                <a class="btn-item" href="https://gf888.tw/member/kyc">
                                     <div class="btn-item__icon">
-                                        <img src="./images/registration_info@2x.png" alt="" class="icon-img">
+                                        <img src="/assets/pc/images/registration_info@2x.png" alt=""
+                                            class="icon-img">
                                     </div>
                                     <div class="btn-item__title">
-                                        <span class="title-text">去完善资料</span>
+                                        <span class="title-text">實名認證</span>
                                     </div>
                                 </a>
-                                <a class="btn-item" href="index.html">
+                                <a class="btn-item" href="/">
                                     <div class="btn-item__icon">
-                                        <img src="./images/registration_home@2x.png" alt="" class="icon-img">
+                                        <img src="/assets/pc/images/registration_home@2x.png" alt=""
+                                            class="icon-img">
                                     </div>
                                     <div class="btn-item__title">
-                                        <span class="title-text">前往游戏</span>
+                                        <span class="title-text">前往遊戲</span>
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="regsuccess-popup__footer">
-                        <a class="btn btn-primary rounded-pill btn-ripple" href="deposit.html">立即充值</a>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- 登入成功 start -->
+    <div id="toast" class="toast-popup" style="display: none;">
+        <div class="toast-popup__body">
+            <div class="toast-popup__icon">
+                <div class="toast-popup__icon__img -success"></div>
+            </div>
+            <div class="toast-popup__text">登入成功</div>
+        </div>
+    </div>
+    <!-- 登入成功 end -->
+<!-- 服務條款 -->
+    <div class="modal fade" id="service-rule-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">服務條款</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cardboard">
+                        <div class="editor-content">
+                            <h3>一、遵守會員規範及法律規定：</h3>
+                            <p>您瞭解您註冊成為會員后，即可使用金富發娛樂(以下稱本站)所提供之各項服務(以下稱本服務)。</p>
+                            <p>當會員使用本服務時，即表示除了同意遵守本服務條款外，還同意接受本站對會員規範(包括各項遊戲規則、球賽投注規則、公告及注意事項等)及相關法令規定之拘束，本站所有產品與客戶服務、軟件系統、網路架構等相關業務事宜，使用本服務之會員請遵守使用者當地法令之許可，如有違反之情事恕非本服務之負責範圍。
+                            </p>
+                            <h3>二、服務簡介：</h3>
+                            <p>本站旨在創造一個『安全可靠』、『即時便利』、『公平公正』、『專業營運』的優質娛樂服務平臺，強調的讓會員不受時空的限制，7*24小時隨時上線就可以參與一個公平公正的遊戲，亦可以享受到與世界各地玩家切磋的樂趣，我們秉持以客為尊的態度，不斷開發創新及瞭解客戶需求是本公司引以為傲的經營理念，翼望能創造出嶄新的娛樂價值以及達到多方普及的目的，成為具有領導指標性的娛樂網站。
+                            </p>
+                            <h3>三、真實登錄義務：</h3>
+                            <ul>
+                                <li>1.會員登錄之資料不實。</li>
+                                <li>2.使用他人的名義申請本服務。</li>
+                                <li>3.違反遊戲公平原則。</li>
+                                <li>4.參與遊戲或比賽時，故意鉆研系統漏洞或利用遊戲弱點以影響結果。</li>
+                                <li>5.違反本服務條款時。</li>
+                                <li>6.本站不允許不公平的下注方式、雙邊下注、無風險下注及任何無風險解凍之下注方式，如有發現上述問題之玩家，本站有終止玩家帳號使用之權力。如有任何爭議問題，本站有最終決定權。無論任何情形，就停止或更改服務或終止會員帳戶服務所可能產生之困擾、不便或損害，本服務對任何會員或第三人均不負任何責任。
+                                </li>
+                                <li>7.本站的所有優惠特為玩家而設，如發現任何團體或個人，以不誠實方式套取紅利或任何威脅、濫用公司優惠等行為，公司保留凍結、取消該團體或個人帳戶及帳戶結餘的權利。</li>
+                                <li>8.本站不允許會員有多個帳號或同IP使用不同帳號等情況，本站有權將會員帳號凍結及盈利收回，恕不退回本金，會員帳號將永久凍結。本站有最終解釋權。無論任何情形，就停止或更改服務或終止會員帳戶服務所可能產生之困擾、不便或損害，本服務對任何會員或第三人均不負任何責任。
+                                </li>
+                                <li>9.本站的所有優惠特為玩家而設，為避免對文字理解差異，活動如有任何異動，本公司有權在任何時間，修改暫停或取消優惠活動。</li>
+                            </ul>
+                            <h3>五、服務暫停或中斷：</h3>
+                            <ul>
+                                <li>(一)本站于下列情形之一時，得暫停或中斷本服務之全部或一部，對於使用者不負擔任何賠償責任：
+                                    <ul>
+                                        <li>1.對於本服務相關係統裝置進行遷移、更換或維護時。</li>
+                                        <li>2.因不可歸責于本站所造成服務停止或中斷。</li>
+                                        <li>3.因不可抗力所造成服務停止或中斷。</li>
+                                    </ul>
+                                </li>
+                                <li>(二)如因本站對於本網站相關係統裝置進行遷移、更換或維護而必須暫停或中斷全部或一部之服務時，本站于暫停或中斷前將以電子郵箱通知或於本網站上公告。</li>
+                                <li>(三)對於本服務之暫停或中斷，可能造成您使用上的不便、資料遺失或其他經濟及時間上之損失，您平時應採取適當的防護措施，以保障您的權益。</li>
+                            </ul>
+                            <h3>六、保管義務：</h3>
+                            <p>會員有義務妥善保管在本站之帳號與密碼，併爲此組帳號與密碼登入系統后所進行之一切活動負責。為維護會員自身權益，請勿將帳號與密碼泄露或提供予第三人知悉，或出借或轉讓他人使用。</p>
+                            <h3>七、同意各項球賽及遊戲規則：</h3>
+                            <p>為避免使用者于本平臺投注球賽或遊戲時產生爭議，各項規則于遊戲中心和球賽中心均有詳細說明，請務必詳細閱讀本服務所定之各項規則，會員一經開始使用本服務，即被視為已接受所有之規定。
+                            </p>
+                            <h3>八、會員規範之增訂及修改：</h3>
+                            <p>本服務條款如有增訂或修改，您同意自該修訂條款于本網站公告之時起受其拘束，本網站將不對會員個別通知。如您于公告後繼續使用本服務，則視為您已經同意該修訂條款。</p>
+                            <h3>九、隱私權聲明：</h3>
+                            <p>我們致力為客戶保護隱私並提供一個最安全的遊戲平臺，我們在此網站蒐集的資料將會為您提供最卓越的服務，我們不會出賣或租賃您的個人資料給第三方，客戶所提供的個人資料均經過SSL128加密技術處理，並儲存在安全的、非公開的作業系統，對於有機會接觸客戶的個人資料的協助夥伴也必需遵守我們訂立的隱私保密規則。
+                            </p>
+                            <h3>十、免責聲明：</h3>
+                            <p>部份地區或國家法律尚未明定線上博彩的合法性問題，甚至某些地區或國家已明確規範線上博彩為非法行為。我們無意邀請任何人在這些地區或國家非法使用本服務平臺。使用者必需確定在您所居住的地區或國家使用線上博彩是否合法，並負完全的責任，使用本服務之會員請遵守使用者當地法令之許可，如有違反之情事恕非本公司之負責範圍。
+                            </p>
+                            <h3>十一、不肖註冊會員停止服務</h3>
+                            <p>為防止有心人士利用本站作為詐騙工具，如利用本站進行任何洗錢詐騙行為,本站有權利永久終止會員服務,不另行通知。近來有不肖註冊會員冒用本公司名稱、平臺存款系統進行詐騙犯罪！嚴重影響本公司聲譽。本公司在此鄭重聲明，對於類似不法行為，本公司會全力配合並提供執法單位關於嫌疑人詳細資訊IP位址，請宵小自重，勿以身試法。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 服務條款end -->
     <section class="login">
-        <div class="container-md h-100">
+        <div class="container h-100">
             <div class="d-flex justify-content-center overflow-hidden h-100">
-                <div class="entry col-md-7 col-lg-4">
+                <div class="entry col-sm-12 col-md-7 col-7">
                     <div class="entry__content">
                         <div class="entry-brand">
                             <div class="entry-brand__logo">
-                                <img src="./images/main_logo@3x.webp" alt="" class="logo-icon">
+                                <img src="images/main_logo@3x.webp" alt="" class="logo-icon">
                             </div>
                             <div class="entry-brand__info">
-                                <p class="info-text" id="info-text">尊贵的会员您好 - 欢迎您回来</p>
+                                <p class="info-text" id="info-text">尊貴的會員您好 - 歡迎您回來</p>
                             </div>
                         </div>
                         <div class="entry-form">
                             <div class="entry-form__main" id="form-main">
                                 <div class="entry-btn-rt entry-btn-rt--active" id="entry-btn-rt">
                                     <div class="entry-btn-rt__icon"></div>
-                                    <div class="entry-btn-rt__text">注册新用户</div>
+                                    <div class="entry-btn-rt__text">註冊新用戶</div>
                                 </div>
                                 <div class="entry-btn-lf" id="entry-btn-lf">
                                     <div class="entry-btn-lf__icon"></div>
-                                    <div class="entry-btn-lf__text">返回登录</div>
+                                    <div class="entry-btn-lf__text">返回登入</div>
                                 </div>
                                 <!-- login in -->
                                 <div class="main-login main-login--active" id="login-form">
-                                    <div class="main-login__title" id="entry-title">登录</div>
-                                    <div class="com-cell">
-                                        <div class="com-cell__form -filled">
-                                            <div class="form-group">
-                                                <!-- el-icon自由更換 -->
-                                                <div class="el-icon -icon_user"></div>
-                                                <input type="text" class="el-input" placeholder="账号" minlength="5"
-                                                    maxlength="9" />
-                                                <div class="el-value">
-                                                    <span class="el-value__reveal el-value__reveal--off"></span>
-                                                    <span class="el-value__clear"></span>
-                                                </div>
-                                            </div>
+									<form id="_login-form" action="https://gf888.tw/d90fb7d85ee8842e4a539167fecf1c54">
+										<div class="main-login__title" id="entry-title">登入</div>
+										<div class="com-cell">
+											<div class="com-cell__form -filled">
+												<div class="form-group">
+													<!-- el-icon自由更換 -->
+													<div class="el-icon -icon_user"></div>
+													<input name="account" type="text" class="el-input" placeholder="帳號" minlength="5" maxlength="12"
+													required />
+													<div class="el-value">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="com-cell">
+											<div class="com-cell__form -filled">
+												<div class="form-group">
+													<!-- el-icon自由更換 -->
+													<div class="el-icon -icon_password"></div>
+													<input name="password" type="password" class="el-input toggle-password"
+														placeholder="登入密碼" minlength="6" maxlength="12"
+														required />
+													<div class="el-value toggle-eyes">
+														<span class="el-value__reveal el-value__reveal--off"></span>
+														<span>&nbsp;&nbsp;&nbsp;</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="com-cell -row">
+											<div class="com-cell__check">
+												<input id="remeber-me" type="checkbox" name="remember_me" value="yes"
+													class="check-checkbox"
+													checked />
+												<label for="remeber-me" class="check-text">記住密碼</label>
+											</div>
+											<a href="javascript:void(0)" class="com-cell__lf" data-bs-toggle="modal"
+                                                data-bs-target="#forget-modal">
+                                                <span class="cell-text">忘記密碼？</span></a>
+										</div>
+                                        <div class="contact">
+                                            <a class="contact__btn" href="https://lin.ee/2jBvaXo">
+                                                <div class="btn-icon"></div>
+                                                <div class="btn-text">聯絡客服</div>
+                                            </a>
                                         </div>
-                                        <div class="com-cell__verify com-cell__verify--error">
-                                            <div class="verify-icon"></div>
-                                            <span class="verify-text">5-9位数字,小写字母</span>
-                                        </div>
-                                    </div>
-                                    <div class="com-cell">
-                                        <div class="com-cell__form -filled">
-                                            <div class="form-group">
-                                                <!-- el-icon自由更換 -->
-                                                <div class="el-icon -icon_password"></div>
-                                                <input type="password" class="el-input" placeholder="密码" minlength="6"
-                                                    maxlength="12" />
-                                                <div class="el-value">
-                                                    <span class="el-value__reveal el-value__reveal--off"></span>
-                                                    <span class="el-value__clear"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="com-cell__verify com-cell__verify--error">
-                                            <div class="verify-icon"></div>
-                                            <span class="verify-text">6-12位字符</span>
-                                        </div>
-                                    </div>
-                                    <div class="com-cell">
-                                        <div class="com-cell__form com-cell__form--invalid -filled">
-                                            <div class="form-group">
-                                                <!-- el-icon自由更換 -->
-                                                <div class="el-icon -icon_verification_code"></div>
-                                                <input type="number" class="el-input" placeholder="验证码" />
-                                                <div class="captcha">
-                                                    <img src="./images/captchaCode.png" class="captcha__img" alt="" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="com-cell__verify com-cell__verify--error">
-                                            <div class="verify-icon"></div>
-                                            <span class="verify-text">必填</span>
-                                        </div>
-                                    </div>
-                                    <div class="com-cell -row">
-                                        <div class="com-cell__check">
-                                            <input type="checkbox" id="scales" name="scales" class="check-checkbox" />
-                                            <label for="scales" class="check-text">記住密碼</label>
-                                        </div>
-                                        <a href="javascript:void(0)" class="com-cell__lf" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal2">
-                                            <span class="cell-text">忘記密碼？</span></a>
-                                    </div>
-                                    <div class="contact">
-                                        <a class="contact__btn" href="javascript:void(0);">
-                                            <div class="btn-icon"></div>
-                                            <div class="btn-text">联系客服</div>
-                                        </a>
-                                    </div>
-                                    <a class="btn btn-primary rounded-pill btn-ripple btn--disabled"
-                                        href="javascript:void(0);">会员登录</a>
-                                    <a class="try-btn" href="./index.html">先去逛逛</a>
+										<button type="submit"
+											class="btn btn-primary rounded-pill btn-ripple">登入</button>
+									</form>
+									<a class="try-btn" href="https://gf888.tw">先去逛逛</a>
                                 </div>
                                 <!-- sign in -->
                                 <div class="main-reg" id="reg-form" style="display:none;">
-                                    <div class="main-reg__title">注册</div>
-                                    <div class="com-cell">
-                                        <div class="com-cell__form -filled">
-                                            <div class="form-group">
-                                                <!-- el-icon自由更換 -->
-                                                <div class="el-icon -icon_user"></div>
-                                                <input type="text" class="el-input" placeholder="账号" minlength="5"
-                                                    maxlength="9" />
-                                                <div class="el-value">
-                                                    <span class="el-value__reveal el-value__reveal--off"></span>
-                                                    <span class="el-value__clear"></span>
+                                    <form id="register-form" method="POST" action="https://gf888.tw/4b7cf3b259c5c29ad1c9d822d23bd70e" autocomplete="off">
+                                        <div class="main-reg__title">註冊</div>
+                                        <div class="com-cell">
+                                            <div class="com-cell__form -filled">
+                                                <div class="form-group">
+                                                    <div class="el-icon -icon_user"></div>
+                                                    <span style="color:red;margin-right:1rem;">*</span>
+                                                    <input name="account" type="text" class="el-input"
+                                                        placeholder="帳號 (5~12位英文、數字組合)"
+                                                        minlength="5" maxlength="12" required autocomplete="off" />
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="com-cell__verify com-cell__verify--correct">
-                                            <div class="verify-icon"></div>
-                                            <span class="verify-text">格式正确</span>
-                                        </div>
-                                    </div>
-                                    <div class="com-cell">
-                                        <div class="com-cell__form -filled">
-                                            <div class="form-group">
-                                                <!-- el-icon自由更換 -->
-                                                <div class="el-icon -icon_password"></div>
-                                                <input type="password" class="el-input" placeholder="密码" minlength="6"
-                                                    maxlength="12" />
-                                                <div class="el-value">
-                                                    <span class="el-value__reveal el-value__reveal--off"></span>
-                                                    <span class="el-value__clear"></span>
+                                        <div class="com-cell">
+                                            <div class="com-cell__form -filled">
+                                                <div class="form-group">
+                                                    <div class="el-icon -icon_password"></div>
+                                                    <span style="color:red;margin-right:1rem;">*</span>
+                                                    <input name="login_password" type="password" class="el-input toggle-password"
+                                                        placeholder="登入密碼 (6~12位英文、數字組合)"
+                                                        minlength="6" maxlength="12" required autocomplete="off" />
+                                                    <div class="el-value toggle-eyes">
+                                                        <span class="el-value__reveal el-value__reveal--off"></span>
+                                                        <span>&nbsp;&nbsp;&nbsp;</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="com-cell__verify com-cell__verify--error">
-                                            <div class="verify-icon"></div>
-                                            <span class="verify-text">6-12位字符</span>
-                                        </div>
-                                    </div>
-                                    <div class="com-cell">
-                                        <div class="com-cell__form -filled">
-                                            <div class="form-group">
-                                                <!-- el-icon自由更換 -->
-                                                <div class="el-icon -icon_password"></div>
-                                                <input type="password" class="el-input" placeholder="确认密码" minlength="6"
-                                                    maxlength="12" />
-                                                <div class="el-value">
-                                                    <span class="el-value__reveal el-value__reveal--off"></span>
-                                                    <span class="el-value__clear"></span>
+                                        <div class="com-cell">
+                                            <div class="com-cell__form -filled">
+                                                <div class="form-group">
+                                                    <div class="el-icon -icon_user"></div>
+                                                    <span style="color:red;margin-right:1rem;">*</span>
+                                                    <input name="nickname" type="text" class="el-input"
+                                                        placeholder="名稱"
+                                                        minlength="1" maxlength="20" required autocomplete="off" />
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="com-cell__verify com-cell__verify--error">
-                                            <div class="verify-icon"></div>
-                                            <span class="verify-text">需与密码相符</span>
-                                        </div>
-                                    </div>
-                                    <div class="com-cell">
-                                        <div class="com-cell__form -filled">
-                                            <div class="form-group">
-                                                <!-- el-icon自由更換 -->
-                                                <div class="el-icon -icon_qrcode"></div>
-                                                <input type="text" class="el-input" placeholder="邀请码" />
-                                                <div class="el-value">
-                                                    <span class="el-value__reveal el-value__reveal--off"></span>
-                                                    <span class="el-value__clear"></span>
+                                        <div class="com-cell">
+                                            <div class="com-cell__form -filled">
+                                                <div class="form-group">
+                                                    <div class="el-icon -icon_verification_code"></div>
+                                                    <span style="color:red;margin-right:1rem;">*</span>
+                                                    <input name="mobile" type="text" class="el-input" minlength="10"
+                                                        maxlength="10" placeholder="手機號碼" required autocomplete="off" />
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="com-cell__verify com-cell__verify--error">
-                                            <div class="verify-icon"></div>
-                                            <span class="verify-text">必填</span>
+                                        <div class="com-cell">
+                                            <div class="com-cell__form com-cell__form--invalid -filled">
+                                                <div class="form-group">
+                                                    <div class="el-icon -icon_verification_code"></div>
+                                                    <input name="sms_code" type="text" class="el-input"
+                                                        placeholder="簡訊驗證碼" minlength="6" maxlength="6"
+                                                        required autocomplete="off" />
+                                                    <div class="captcha">
+                                                        <button type="button" id="send-sms"
+                                                            class="btn btn-primary">點選發送</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="com-cell">
-                                        <div class="com-cell__check">
-                                            <input type="checkbox" name="scales" class="check-checkbox" checked />
-                                            <label for="scales" class="check-text">是否通過手機接收優惠訊息</label>
+                                        <div class="com-cell">
+                                            <div class="com-cell__form -filled">
+                                                <div class="form-group">
+                                                    <div class="el-icon -icon_qrcode"></div>
+                                                    <select class="el-input" name="referral_code">
+                                                        <option value="GF888">
+                                                            推薦代理碼:GF888</option>
+                                                    </select>
+                                                    <div class="el-value">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="com-cell">
-                                        <div class="com-cell__check">
-                                            <input type="checkbox" name="scales" class="check-checkbox" />
-                                            <label for="scales" class="check-text">我已年滿18歲，並同意投注相關規範以及<a
-                                                    href="javascript:void(0)"
-                                                    onclick="showServiceTerms()">服務條款</a></label>
+                                        <div class="com-cell">
+                                            <div class="com-cell__check">
+                                                <input type="checkbox" name="age18" value="yes" class="check-checkbox"
+                                                    required />
+                                                <label for="scales" class="check-text">我已年滿18歲，並同意投注相關規範以及<a
+                                                        href="javascript:void(0)"
+                                                        data-bs-toggle="modal" data-bs-target="#service-rule-modal">服務條款</a></label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="contact">
-                                        <a class="contact__btn" href="javascript:void(0);">
-                                            <div class="btn-icon"></div>
-                                            <div class="btn-text">联系客服</div>
-                                        </a>
-                                    </div>
-                                    <a class="btn btn-primary rounded-pill btn-ripple" href="javascript:void(0);"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal">注册</a>
+                                        <div class="contact">
+                                            <a class="contact__btn" href="https://lin.ee/2jBvaXo">
+                                                <div class="btn-icon"></div>
+                                                <div class="btn-text">聯絡客服</div>
+                                            </a>
+                                        </div>
+                                        <button type="submit"
+                                            class="btn btn-primary rounded-pill btn-ripple">註冊</button>
+                                    </form>
                                 </div>
                                 <!-- sign in end -->
                             </div>
@@ -452,10 +428,8 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
         //popup-show/hide
@@ -467,14 +441,7 @@
                 x.style.display = 'none';
             }
         }
-        function showServiceTerms() {
-            var x = document.getElementById('serviceTerms');
-            if (x.style.display === 'none') {
-                x.style.display = 'block';
-            } else {
-                x.style.display = 'none';
-            }
-        }
+
         function entrySwitch() {
             var rtbtn = document.getElementById('entry-btn-rt');
             var lfbtn = document.getElementById('entry-btn-lf');
@@ -482,39 +449,348 @@
             var login = document.getElementById('login-form');
             var signin = document.getElementById('reg-form');
             var title = document.getElementById('info-text');
-            rtbtn.addEventListener('click', function () {
+            rtbtn.addEventListener('click', function() {
                 formmain.classList.add('entry-form__main--active');
                 lfbtn.classList.add('entry-btn-lf--active');
                 rtbtn.classList.remove('entry-btn-rt--active');
                 signin.style.display = 'block';
                 login.classList.remove('main-login--active');
                 login.style.display = 'none';
-                title.innerHTML = '欢迎成为我们的会员';
+                title.innerHTML = '歡迎成為我們的會員';
                 // setTimeout(function () {
                 //   login.style.display = 'none';
                 // }, 100);
-                setTimeout(function () {
+                setTimeout(function() {
                     signin.classList.add('main-reg--active');
                 }, 200);
             });
-            lfbtn.addEventListener('click', function () {
+            lfbtn.addEventListener('click', function() {
                 formmain.classList.remove('entry-form__main--active');
                 lfbtn.classList.remove('entry-btn-lf--active');
                 rtbtn.classList.add('entry-btn-rt--active');
                 login.style.display = 'block';
                 signin.classList.remove('main-reg--active');
                 signin.style.display = 'none';
-                title.innerHTML = '尊贵的会员您好 - 欢迎您回来';
+                title.innerHTML = '尊貴的會員您好 - 歡迎您回來';
                 // setTimeout(function () {
                 //   signin.style.display = 'none';
                 // }, 100);
-                setTimeout(function () {
+                setTimeout(function() {
                     login.classList.add('main-login--active');
                 }, 200);
             });
         }
         entrySwitch();
+
+
+		
+        $('#send-sms').on('click', function(e) {
+            e.preventDefault();
+            //$('button').attr("disabled", true);
+            let phone = $('#register-form input[name="mobile"]');
+            if (phone.val() == '') {
+                showErrorMessage("發生錯誤", "請輸入手機號碼");
+            } else {
+                var form = $(this).closest('form');
+                $.ajax({
+                    type: 'POST',
+                    data: form.serialize(),
+                    url: 'https://gf888.tw/17ee8520b1f6a201bd21c229ee2f560d',
+                    success: function(response) {
+                        if (response.code == 0) {
+                            showSuccessMessage("簡訊成功發送", "請輸入驗證碼");
+                        } else {
+                            showErrorMessage("發生錯誤", response.message);
+                        }
+                        //$('button').attr("disabled", false);
+                    }
+                });
+            }
+        });
+
+        $('#register-form').on('submit', function(e) {
+            e.preventDefault();
+            $('button[type="submit"]').attr('disabled', true);
+            var form = $(this);
+            var data = $(this).serializeArray();
+
+            $.ajax({
+                type: 'POST',
+                url: form.attr('action'),
+                data: $.param(data),
+                success: function(response) {
+                    if (response.code == 0) {
+                        $('.user-id').text($('#register-form input[name="account"]').val());
+                        $('#reg-modal').modal('show');
+                    } else {
+                        alert(response.message);
+                        $('button[type="submit"]').attr('disabled', false);
+                    }
+                }
+            });
+        });
+
+        $('#_login-form').on('submit', function(e) {
+            e.preventDefault();
+            $('button[type="submit"]').attr('disabled', true);
+            var form = $(this);
+            var data = $(this).serializeArray();
+
+            $.ajax({
+                type: 'POST',
+                url: form.attr('action'),
+                data: $.param(data),
+                success: function(response) {
+                    if (response.code == 0) {
+                        toastMessage('登入成功');
+                        setTimeout(() => {
+                            location.href = 'https://gf888.tw';
+                        }, 1000);
+                    } else {
+                        showErrorMessage("發生錯誤", response.message);
+                        $('button[type="submit"]').attr('disabled', false);
+                    }
+                }
+            });
+        });
+
+		$('.toggle-eyes').on('click', function(){
+            $(this).children('span').toggleClass('el-value__reveal--off');
+            if ($(this).siblings('.toggle-password').attr('type') == "password") {
+                $(this).siblings('.toggle-password').attr('type', 'text');
+            } else {
+                $(this).siblings('.toggle-password').attr('type', 'password');
+            }
+        });
+
+        function toastMessage(message) {
+            $('.text').text(message);
+            $("#toast").show();
+        }
+
+        function showErrorMessage(title, message) {
+            $('.xfe__title').text(title);
+            $('.xfe__text').text(message);
+            $('#error-message').modal('show');
+        }
+
+        $('#forget-button').on('click', function(){
+            let type = $('input[name="forgetpassword"]:checked').val();
+            if(type == 'login') {
+                location.href = "https://gf888.tw/83e8199fcecc239bbdaff668d9836a04";
+            } else {
+                location.href = "https://gf888.tw/3fdb0064-0676-48a4-85eb-f97cafb974d5";
+            }
+        });
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        localStorage.removeItem('hideModalDate', '');
     </script>
 </body>
+
+<!-- 客服 -->
+<div class="offcanvas-area">
+	<!--<a class="service-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"-->
+	<!--	aria-controls="offcanvasRight" href="#">-->
+	<a class="service-btn" href="https://lin.ee/2jBvaXo" target="line">
+		<div class="service-btn__icon">
+			<img src="/assets/pc/images/service-icon.gif" alt="" class="icon-img">
+		</div>
+		<h5 class="service-btn__title">客服中心</h5>
+	</a>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+	<div class="offcanvas-header">
+		<h5 id="offcanvasRightLabel">客服</h5>
+		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	</div>
+	<div class="offcanvas-body">
+		<div class="wcr">
+			<div class="wcr-list" id="wcr-list">
+
+			</div>
+			<div class="mt-auto">
+				<div class="wcr-footer">
+					<button class="wcr-btn btn btn-primary rounded-pill btn-ripple" id="file-upload-btn" style="margin-right:12px;" ><i class="fas fa-file-upload"></i></button>
+					<input type="file" id="file-upload" class="d-none" accept="image/jpeg, image/png">
+					<div class="wcr-input">
+						<input type="text" class="wcr-input__input" id="message">
+					</div>
+					<button class="wcr-btn btn btn-primary rounded-pill btn-ripple" id="send">送出</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 客服end -->
+
+<div class="modal" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="imageModalLabel">檢視圖片</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img id="full-image" src="" class="img-fluid" alt="大圖">
+			</div>
+		</div>
+	</div>
+</div>
+
+<link rel="modulepreload" href="https://gf888.tw/build/assets/app-DCYbCGsD.js" /><script type="module" src="https://gf888.tw/build/assets/app-DCYbCGsD.js"></script><script>
+    $('#send').on('click', function(){
+        let message = $('#message').val();
+        var now = new Date();
+        var hours = now.getHours();  // 小時
+        var minutes = now.getMinutes();  // 分
+
+        if(message != '') {
+
+            $.post("https://gf888.tw/c95c9ea8-1e05-4374-9b73-8c044a603524", {message: message}, function(response){
+                $('#message').val('').focus();
+            });
+        }
+    });
+
+    $.get("https://gf888.tw/1b5f4dc2-0125-4d3d-9315-f12e868f30df", function(response){
+        if(response.code == 0) {
+            if(response.messages.length > 0) {
+                $.each(response.messages,function(k,v){
+                    appendMessage(v.created_at, v.from, v.message, v.type);
+                });
+            } else {
+                appendMessage("2025-08-27 20:20:28", 'service', '請先輸入查詢帳號', 'text');
+            }
+        }
+    });
+
+    function appendMessage(dateTime,from,message,type) {
+        const time = dateTime.match(/\d{2}:\d{2}/)[0];
+        if(type == 'file') {
+            message = `<img class="thumbnail" style="cursor: pointer; width: 150px;" src="/storage/${message}" alt="圖片"/>`;
+        }
+        if(from == 'service') {
+            $('#wcr-list').append(`<div class="wcr-list__item">
+                <div class="wcr-list__content wcr--left">
+                    <div class="list__item__content">
+                        <div class="stock-user">
+                            <span class="stock-user__text">客服</span>
+                        </div>
+                        <div class="stock-message">
+                            <div class="stock-message__content">
+                                ${message}
+                            </div>
+                            <div class="stock-message__time">
+                                <span class="time-text">${time}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`);
+        } else {
+            $('#wcr-list').append(`
+                <div class="wcr-list__item">
+                    <div class="wcr-list__content wcr--right">
+                        <div class="list__item__content">
+                            <div class="stock-message">
+                                <div class="stock-message__content">
+                                    ${message}
+                                </div>
+                                <div class="stock-message__time">
+                                    <span class="time-text">${time}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `);
+        }
+        scrollToBottom();
+    }
+
+    $(function(){
+        Echo.channel('room.180110e17dcd5c9d88aeeeddd209bad8')
+            .listen('ServiceMessage', (event) => {
+                appendMessage(event.created_at, event.from, event.message, event.type);
+            });
+    });
+
+    const chatbox = document.getElementById('wcr-list');
+        // 監聽 `load` 事件，確保滾動到底部
+        chatbox.addEventListener('load', function (event) {
+            if (event.target.tagName === 'IMG') {
+                scrollToBottom();
+            }
+        }, true); // 第三個參數 `true` 表示使用捕獲階段
+
+    function scrollToBottom() {
+        const messagesContainer = document.getElementById('wcr-list');
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    $(function(){
+        $('#file-upload-btn').click(function () {
+            $('#file-upload').click(); // 觸發檔案選擇框
+        });
+
+        $('#file-upload').change(function () {
+            let room_id = 'room.180110e17dcd5c9d88aeeeddd209bad8';
+
+            var formData = new FormData();
+            var file = $('#file-upload')[0].files[0];
+            //console.log(file);
+            if (file) {
+                formData.append('room_id', room_id);
+                formData.append('file', file);
+
+                // 使用 AJAX 上傳檔案
+                $.ajax({
+                    url: 'https://gf888.tw/49b28999-7a79-43a3-995d-9e0b9d093b6f',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    success: function(response) {
+                        //console.log('檔案上傳成功');
+                        // 在檔案上傳後可以觸發一個 Laravel 的事件（使用 Echo 等方式）
+                        //alert('檔案已成功上傳！');
+                    },
+                    error: function(error) {
+                        //console.error('檔案上傳失敗', error);
+                        alert('檔案上傳失敗');
+                    }
+                });
+            }
+        });
+    });
+
+    // 當點擊縮圖時，顯示大圖
+    $(document).on('click', '.thumbnail', function () {
+        var fullImageUrl = $(this).attr('src');
+        $('#full-image').attr('src', fullImageUrl);  // 設置 Modal 中的圖片
+        $('#imageModal').modal('show');  // 顯示大圖 Modal
+    });
+
+    $('.close').click(function () {
+        $('#imageModal').modal('hide');
+    });
+
+    document.getElementById('message').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {  // 檢查是否按下 Enter 鍵
+            event.preventDefault(); // 防止頁面刷新
+            $('#send').trigger('click');
+        }
+    });
+</script>
 
 </html>
