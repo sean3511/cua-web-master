@@ -1033,17 +1033,19 @@ tr {
 .com-cell__lf {
   margin-left: auto;
 }
+/* 忘記密碼 */
 .com-cell__lf .cell-text {
-  font-size: 12px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
 }
 .com-cell__check {
   display: flex;
   align-items: center;
 }
+/* 記住密碼 */
 .com-cell__check .check-text {
   padding-left: 4px;
-  font-size: 12px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
 }
 .com-cell__check .check-checkbox {
@@ -3966,17 +3968,19 @@ section {
   background-size: contain;
   background-position: center;
 }
+/* 聯繫客服 */
 .entry-form__main .main-login .contact__btn .btn-text,
 .entry-form__main .main-reg .contact__btn .btn-text {
-  font-size: 12px;
+  font-size: 14px;
   color: #c5c8d1;
   padding-left: 4px;
 }
+/* 先去逛逛 */
 .entry-form__main .main-login .try-btn,
 .entry-form__main .main-reg .try-btn {
   display: block;
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   padding: 32px 0px 12px;
   color: #c5c8d1;
   text-align: center;
@@ -3998,15 +4002,16 @@ section {
 .entry-form__main .main-login--active .main-login__title {
   transform: translate(0px, 0px);
 }
+/* 登入input修改點 */
 .entry-form__main .main-login .com-cell .el-input {
-  font-size: 12px;
+  font-size: 14px;
   color: #ffffff;
 }
 .entry-form__main .main-login .com-cell .el-input::-moz-placeholder {
-  font-size: 12px;
+  font-size: 14px;
 }
 .entry-form__main .main-login .com-cell .el-input::placeholder {
-  font-size: 12px;
+  font-size: 14px;
 }
 .entry-form__main .main-reg {
   padding-left: 12%;
@@ -4025,9 +4030,16 @@ section {
 .entry-form__main .main-reg--active .main-reg__title {
   transform: translate(0px, 0px);
 }
+/* 註冊input修改點 */
 .entry-form__main .main-reg .com-cell .el-input {
-  font-size: 12px;
+  font-size: 14px;
   color: #ffffff;
+}
+.entry-form__main .main-reg .com-cell .el-input::-moz-placeholder {
+  font-size: 14px;
+}
+.entry-form__main .main-reg .com-cell .el-input::placeholder {
+  font-size: 14px;
 }
 .entry-form__main .main-reg .com-cell .el-value__reveal,
 .entry-form__main .main-reg .com-cell .el-value__clear {
