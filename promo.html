@@ -720,28 +720,47 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
         function setMask() {
+     
+        function setMask() {
             let navMask = document.getElementById('nav-mask');
             let navItem = document.querySelectorAll('.nav-item');
             let navMenu = document.querySelectorAll('.game-menu');
-            console.log(navItem, navMenu, navMask)
-            for (let i = 0; i < navItem.length; i++) {
-                navItem[i].addEventListener("mouseover", function () {
 
+            for (let i = 0; i < navItem.length; i++) {
+                navItem[i].addEventListener("mouseenter", function () {
                     if (navMenu[i]) {
+                        // 打開
                         navMask.style.display = 'block';
                         navMask.style.height = `${navMenu[i].offsetHeight + 16}px`;
-                    } else {
-                        navMask.style.display = 'none';
-                        navMask.style.height = 0;
+
+                        navMenu[i].style.visibility = "visible";
+                        navMenu[i].style.opacity = "1";
+                        navMenu[i].style.pointerEvents = "auto";
                     }
                 });
-                navItem[i].addEventListener("mouseout", function () {
-                    navMask.style.display = 'none';
-                    navMask.style.height = 0;
+
+                // 這裡統一監聽 navItem / navMenu / navMask 的 mouseleave
+                [navItem[i], navMenu[i], navMask].forEach(el => {
+                    if (!el) return;
+                    el.addEventListener("mouseleave", function (e) {
+                        // 判斷滑鼠是不是還在允許區域裡
+                        const safeArea = [navItem[i], navMenu[i], navMask];
+                        let stillInside = safeArea.some(safeEl => safeEl && safeEl.contains(e.relatedTarget));
+
+                        if (!stillInside) {
+                            // 收起
+                            navMask.style.display = 'none';
+                            navMask.style.height = 0;
+
+                            navMenu[i].style.visibility = "hidden";
+                            navMenu[i].style.opacity = "0";
+                            navMenu[i].style.pointerEvents = "none";
+                        }
+                    });
                 });
             }
         }
-        setMask()
+        setMask();
     </script>
 </body>
 

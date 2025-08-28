@@ -2949,11 +2949,11 @@ swiper-slide {
 .nav-item:hover .game-menu-mask {
   display: block;
 }
-.nav-item:hover .game-menu {
+/* .nav-item:hover > .game-menu {
   visibility: visible;
   opacity: 1;
-}
-
+  pointer-events: auto;
+} */
 @media (max-width: 980px) {
   .header-nav {
     display: none;
