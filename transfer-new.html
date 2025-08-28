@@ -655,14 +655,10 @@
             }).join(''));
         }
 
-        $('.refresh-balance').on('click', function(){
-            // header金額的字體
-            $('.inner-user__info .balance').text('********.**');
-            // 外接館金額的字體
-            $('.balance .balance__bg__total').text('********.**');
+     	 $('.refresh-balance').on('click', function(){
+            $('.balance').text('********.**');
             $.get("https://gf888.tw/member/balance", function(response){
-                $('.inner-user__info .balance').text(response);
-                $('.balance .balance__bg__total').text(response);
+                $('.balance').text(response);
             });
         });
 
