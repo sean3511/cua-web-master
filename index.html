@@ -1131,44 +1131,46 @@
         $window.trigger('scroll');
 
         function setMask() {
-            let navMask = document.getElementById('nav-mask');
-            let navItem = document.querySelectorAll('.nav-item');
-            let navMenu = document.querySelectorAll('.game-menu');
+        const navMask = document.getElementById('nav-mask');
+        const navItems = document.querySelectorAll('.nav-item');
 
-            for (let i = 0; i < navItem.length; i++) {
-                navItem[i].addEventListener("mouseenter", function () {
-                    if (navMenu[i]) {
-                        // 打開
-                        navMask.style.display = 'block';
-                        navMask.style.height = `${navMenu[i].offsetHeight + 16}px`;
+        navItems.forEach((item) => {
+            // 只找這個 item 下面的 .game-menu（可能不存在）
+            const menu = item.querySelector('.game-menu');
 
-                        navMenu[i].style.visibility = "visible";
-                        navMenu[i].style.opacity = "1";
-                        navMenu[i].style.pointerEvents = "auto";
-                    }
-                });
+            // 開啟
+            item.addEventListener('mouseenter', () => {
+            if (!menu) return; // 沒有子選單就不處理
+            navMask.style.display = 'block';
+            navMask.style.height = `${menu.offsetHeight + 16}px`;
 
-                // 這裡統一監聽 navItem / navMenu / navMask 的 mouseleave
-                [navItem[i], navMenu[i], navMask].forEach(el => {
-                    if (!el) return;
-                    el.addEventListener("mouseleave", function (e) {
-                        // 判斷滑鼠是不是還在允許區域裡
-                        const safeArea = [navItem[i], navMenu[i], navMask];
-                        let stillInside = safeArea.some(safeEl => safeEl && safeEl.contains(e.relatedTarget));
+            menu.style.visibility = 'visible';
+            menu.style.opacity = '1';
+            menu.style.pointerEvents = 'auto';
+            });
 
-                        if (!stillInside) {
-                            // 收起
-                            navMask.style.display = 'none';
-                            navMask.style.height = 0;
+            // 收起：監聽 item / menu / mask 的 mouseleave
+            [item, menu, navMask].forEach((el) => {
+            if (!el) return;
+            el.addEventListener('mouseleave', (e) => {
+                const related = e.relatedTarget; // 可能是 null
+                const safeArea = [item, menu, navMask].filter(Boolean);
+                const stillInside = related && safeArea.some((node) => node.contains(related));
+                if (stillInside) return;
 
-                            navMenu[i].style.visibility = "hidden";
-                            navMenu[i].style.opacity = "0";
-                            navMenu[i].style.pointerEvents = "none";
-                        }
-                    });
-                });
-            }
+                navMask.style.display = 'none';
+                navMask.style.height = 0;
+
+                if (menu) {
+                menu.style.visibility = 'hidden';
+                menu.style.opacity = '0';
+                menu.style.pointerEvents = 'none';
+                }
+            });
+            });
+        });
         }
+
         setMask();
         //show/hide
         function openCity(evt, cityName) {
