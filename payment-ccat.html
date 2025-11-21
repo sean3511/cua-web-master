@@ -18,161 +18,46 @@
 </head>
 
 <body>
-    <!-- 客服 -->
-    <div class="offcanvas-area">
-        <a class="service-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight" href="#">
-            <div class="service-btn__icon">
-                <img src="./images/service-icon.gif" alt="" class="icon-img">
-            </div>
-            <h5 class="service-btn__title">客服中心</h5>
-        </a>
-    </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">客服</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="wcr">
-                <div class="d-flex justify-content-center">
-                    <div class="spinner-border text-success" role="status">
-                        <span class="visually-hidden">Loading...</span>
+        <!-- 客服渠道 -->
+     <div class="client-service-pc">
+        <div class="client-service-group">
+            <div class="client-service_cotainer">
+                    <div class="client-service__item">
+                        <a href="service.html" target="_blank" class="client-service__btn">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 60 60" fill="none">
+                        <circle cx="30" cy="30" r="30" fill="#4054C7"/>
+                        <path d="M21.8163 12.3745C16.5981 15.4499 13.3298 21.0735 13.1496 27.1979L12.737 27.3101C9.69022 28.1427 8.21229 32.5246 9.42225 37.1347C10.6311 41.7416 14.0574 44.7822 17.1053 43.9502L18.8983 43.4576C19.8555 43.1956 20.3227 41.8428 19.948 40.4197L17.2239 30.0368V27.7364C17.2239 22.8907 19.7531 18.4193 23.861 15.9951C27.9727 13.5697 33.028 13.5697 37.1386 15.9951C41.2465 18.4193 43.7757 22.8907 43.7757 27.7364V30.0462L41.2102 39.8182C40.1464 41.238 38.8076 42.4559 37.2398 43.3775C36.4532 43.8441 35.6271 44.204 34.7815 44.4892C34.3841 43.7346 33.7664 43.242 33.061 43.242H27.3296C26.1191 43.242 25.1506 44.6706 25.1506 46.4441V46.799C25.1506 48.5692 26.1191 50 27.3296 50H33.0616C33.879 50 34.579 49.341 34.9531 48.3735C36.3774 47.9821 37.7677 47.4127 39.081 46.6404C40.4767 45.8172 41.7267 44.806 42.8175 43.6544L43.897 43.9508C46.9422 44.7828 50.3712 41.7422 51.5779 37.1353C52.7873 32.5251 51.3105 28.1433 48.2621 27.3107L47.8506 27.1957C47.6665 21.0707 44.4016 15.4499 39.1823 12.375C36.4987 10.7917 33.4979 10 30.4982 10C27.5006 9.99945 24.5009 10.7911 21.8163 12.3745Z" fill="white"/>
+                        </svg>
+                        <div class="client-service__label">在線客服</div>
+                        </a>
                     </div>
-                    <p class="ms-2">連接客服中，請稍候</p>
-                </div>
-                <div class="wcr-list" style="display: none;">
-                    <div class="wcr-list__item">
-                        <div class="wcr-list__content wcr--left">
-                            <div class="list__item__avatar -round">
-                                <img class="avatar-img" src="https://i.pravatar.cc/150?img=24" alt="" />
-                            </div>
-                            <div class="list__item__content">
-                                <div class="stock-user">
-                                    <span class="stock-user__text">客服A</span>
-                                </div>
-                                <div class="stock-message">
-                                    <div class="stock-message__content">
-                                        您好，欢迎进入聊天室...
-                                    </div>
-                                    <div class="stock-message__time">
-                                        <span class="time-text">3:37 PM</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="client-service__item">
+                        <a href="https://line.me/R/ti/p/@146rzxqs?oat_content=url&ts=05301958" target="_blank" class="client-service__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 60 60" fill="none">
+                        <circle cx="30" cy="30" r="30" fill="#06C755"/>
+                        <path d="M16.5793 38H10.6284C9.72904 38 9 37.2731 9 36.3765V23.9231C9 23.0265 9.72904 22.2996 10.6284 22.2996C11.5277 22.2996 12.2567 23.0265 12.2567 23.9231V34.7531H16.5791C17.4784 34.7531 18.2074 35.4799 18.2074 36.3765C18.2077 37.2731 17.4786 38 16.5793 38ZM22.7873 36.3325C22.7873 37.2291 22.0583 37.9559 21.1589 37.9559C20.2596 37.9559 19.5306 37.2291 19.5306 36.3325V23.8791C19.5306 22.9824 20.2596 22.2556 21.1589 22.2556C22.0583 22.2556 22.7873 22.9824 22.7873 23.8791V36.3325ZM37.5063 36.3325C37.5063 37.0359 37.052 37.6593 36.3808 37.8766C36.2152 37.9302 36.0456 37.9562 35.8781 37.9562C35.3666 37.9562 34.8725 37.7152 34.5601 37.2864L28.6964 29.2346V36.3327C28.6964 37.2293 27.9673 37.9562 27.068 37.9562C26.1687 37.9562 25.4397 37.2293 25.4397 36.3327V24.2355C25.4397 23.5321 25.894 22.9087 26.5651 22.6914C27.2364 22.4743 27.9713 22.7122 28.3858 23.2816L34.2496 31.3333V23.8791C34.2496 22.9824 34.9786 22.2556 35.8779 22.2556C36.7772 22.2556 37.5063 22.9824 37.5063 23.8791V36.3325ZM49.3716 37.7004H41.3124C40.4131 37.7004 39.6841 36.9735 39.6841 36.0769V29.8504V23.6235C39.6841 22.7269 40.4131 22 41.3124 22H49.1216C50.0209 22 50.7499 22.7269 50.7499 23.6235C50.7499 24.5201 50.0209 25.2469 49.1216 25.2469H42.9408V28.2269H47.9566C48.8559 28.2269 49.585 28.9538 49.585 29.8504C49.585 30.747 48.8559 31.4739 47.9566 31.4739H42.9408V34.4534H49.3716C50.271 34.4534 51 35.1803 51 36.0769C51 36.9735 50.271 37.7004 49.3716 37.7004Z" fill="white"/>
+                        </svg>
+                        <div class="client-service__label">LINE</div>
+                        </a>
                     </div>
-                    <div class="wcr-list__item">
-                        <div class="wcr-system-message">3月13日 週五</div>
-                        <div class="wcr-list__content wcr--right">
-                            <div class="list__item__content">
-                                <div class="stock-message">
-                                    <div class="stock-message__content">
-                                        您好我有一些问题想要询问，关于奖金￥88888要如何取得呢?
-                                    </div>
-                                    <div class="stock-message__time">
-                                        <span class="time-text">3:37 PM</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wcr-list__item">
-                        <div class="wcr-list__content wcr--left">
-                            <div class="list__item__avatar -round">
-                                <img class="avatar-img" src="https://i.pravatar.cc/150?img=24" alt="" />
-                            </div>
-                            <div class="list__item__content">
-                                <div class="stock-user">
-                                    <span class="stock-user__text">客服A</span>
-                                </div>
-                                <div class="stock-message">
-                                    <div class="wcr-stock">
-                                        <div class="wcr-stock__header">
-                                            <div class="header-title">
-                                                標題
-                                            </div>
-                                            <div class="header-subtitle">
-                                                副標題
-                                            </div>
-                                        </div>
-                                        <div class="wcr-stock__content">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, sint
-                                            omnis assumenda quas corrupti fugiat sunt voluptates aspernatur tempore,
-                                            vel obcaecati distinctio. Adipisci id quaerat veritatis molestiae iusto.
-                                            Odio, architecto!
-                                        </div>
-                                        <div class="wcr-stock__footer">
-                                            <div class="stock-btn">
-                                                <a href="javascript:void(0);"
-                                                    class="stock-btn__item stock-btn__item--disabled">
-                                                    <div class="item-text">按鈕disabled</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="stock-message__time">
-                                            <span class="time-text">3:37 PM</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wcr-list__item">
-                        <div class="wcr-list__content wcr--left">
-                            <div class="list__item__avatar -round">
-                                <img class="avatar-img" src="https://i.pravatar.cc/150?img=24" alt="" />
-                            </div>
-                            <div class="list__item__content">
-                                <div class="stock-user">
-                                    <span class="stock-user__text">客服B</span>
-                                </div>
-                                <div class="stock-message">
-                                    <div class="wcr-stock">
-                                        <div class="wcr-stock__header">
-                                            <div class="header-title">
-                                                標題
-                                            </div>
-                                            <div class="header-subtitle">
-                                                副標題
-                                            </div>
-                                        </div>
-                                        <div class="wcr-stock__content">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolore
-                                            qui neque veritatis, voluptas facilis culpa? Suscipit omnis, totam non
-                                            amet quia odio nam eligendi similique eaque minima dicta mollitia!
-                                        </div>
-                                        <div class="wcr-stock__footer">
-                                            <div class="stock-btn">
-                                                <a href="javascript:void(0);"
-                                                    class="stock-btn__item -primary rounded-pill btn-ripple"
-                                                    onclick="rippleBtn(event,this);">
-                                                    <div class="item-text">按鈕</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="stock-message__time">
-                                        <span class="time-text">3:37 PM</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-auto">
-                    <div class="wcr-footer">
-                        <div class="wcr-input">
-                            <input type="text" class="wcr-input__input">
-                            <!-- <span class="wcr-input-close__text">暂不开放聊天功能</span> -->
-                        </div>
-                        <a class="wcr-btn btn btn-primary rounded-pill btn-ripple" href="javascript:void(0)">送出</a>
-                    </div>
-                </div>
             </div>
         </div>
+          <div class="client-service-btn">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="30" fill="url(#paint0_linear_2664_277)"/>
+            <path d="M41.1865 26.6443C42.5976 26.6443 43.7456 27.7759 43.7456 29.1667V39.7098C43.7456 41.1006 42.5976 42.2322 41.1865 42.2322H39.9053C38.4942 42.2322 37.3461 41.1006 37.3461 39.7098V29.1667C37.3461 27.7759 38.4942 26.6443 39.9053 26.6443H41.1865ZM46.072 29.2331H45.2611C44.9812 29.2331 44.7553 29.4558 44.7553 29.7316V43.7808C44.7553 46.1088 42.8335 48.003 40.4716 48.003H33.2206V46.6538C33.2206 45.361 32.1518 44.3075 30.8385 44.3075H28.1597C26.8464 44.3075 25.7793 45.361 25.7793 46.6538C25.7793 47.9465 26.8465 49 28.1597 49H40.4714C43.3912 49 45.7668 46.6587 45.7668 43.7806V39.7112C45.7668 39.6879 45.7567 39.668 45.7533 39.6447L46.072 39.643C48.2383 39.643 50 37.9066 50 35.773V33.1028C50 30.9692 48.2383 29.2331 46.072 29.2331ZM44.6542 28.0534C44.666 28.1564 44.7536 28.2362 44.8598 28.2362H46.072C46.9452 28.2362 47.7663 28.4621 48.4794 28.8576C48.2534 24.0703 46.1849 19.5872 42.685 16.2624C42.6108 16.1927 42.4911 16.1927 42.4169 16.2658L39.8983 18.7366C42.5839 21.1959 44.2545 24.4742 44.6542 28.0534ZM19.0948 26.6443H17.8136C16.4025 26.6443 15.2544 27.7759 15.2544 29.1667V39.7098C15.2544 41.1006 16.4025 42.2322 17.8136 42.2322H19.0948C20.5059 42.2322 21.654 41.1006 21.654 39.7098V29.1667C21.654 27.7759 20.5059 26.6443 19.0948 26.6443ZM13.7389 29.2331H12.928C10.7617 29.2331 9 30.9695 9 33.1031V35.7734C9 37.9069 10.7617 39.6434 12.928 39.6434H13.7389C14.0188 39.6434 14.2447 39.4207 14.2447 39.1449V29.7316C14.2447 29.4558 14.0188 29.2331 13.7389 29.2331ZM16.5813 16.2641C16.5071 16.1926 16.3874 16.1909 16.3132 16.2607C12.8151 19.5874 10.7467 24.0686 10.5206 28.8559C11.2337 28.4621 12.053 28.2345 12.928 28.2345H14.1418C14.248 28.2345 14.3357 28.1564 14.3475 28.0517C14.747 24.4725 16.4177 21.1941 19.1017 18.7349L16.5813 16.2641ZM35.9837 19.1803C36.2905 19.3631 36.6311 19.4528 36.9682 19.4528C37.4504 19.4528 37.9275 19.2683 38.2866 18.9144L41.3986 15.847C41.4054 15.8404 41.4088 15.8304 41.4155 15.8221C41.4222 15.8155 41.4307 15.8121 41.4357 15.8055C41.4509 15.7872 41.456 15.7639 41.4678 15.744C41.4846 15.7141 41.5048 15.6858 41.515 15.6543C41.5268 15.6227 41.5301 15.5895 41.5352 15.5562C41.5386 15.5263 41.5436 15.4981 41.5419 15.4698C41.5403 15.4333 41.5301 15.4 41.5217 15.3668C41.515 15.3402 41.5082 15.3136 41.4964 15.2887C41.4796 15.2538 41.456 15.2239 41.4324 15.1923C41.4206 15.1774 41.4138 15.1574 41.3986 15.1425C41.3936 15.1375 41.3852 15.1358 41.3784 15.1292C41.37 15.1209 41.3666 15.1109 41.3565 15.1043C38.0067 12.4572 33.794 11 29.4998 11C25.2056 11 20.9929 12.4573 17.64 15.1043C17.6316 15.1109 17.6265 15.1209 17.6181 15.1292C17.6113 15.1342 17.6046 15.1358 17.5978 15.1425C17.5827 15.1574 17.5776 15.1757 17.5641 15.1923C17.5388 15.2239 17.5152 15.2538 17.5001 15.2887C17.4883 15.3136 17.4832 15.3402 17.4748 15.3668C17.4647 15.4017 17.4562 15.4349 17.4545 15.4698C17.4529 15.4997 17.4579 15.528 17.4613 15.5562C17.4664 15.5895 17.4697 15.621 17.4815 15.6543C17.4916 15.6858 17.5102 15.7141 17.5287 15.744C17.5405 15.7639 17.5456 15.7872 17.5608 15.8055C17.5675 15.8121 17.5759 15.8155 17.581 15.8221C17.5877 15.8304 17.5911 15.8404 17.5978 15.847L20.7099 18.9144C21.069 19.27 21.5461 19.4528 22.0283 19.4528C22.3654 19.4528 22.706 19.3631 23.0128 19.1803C24.9633 18.0105 27.2072 17.3923 29.4964 17.3923C31.7891 17.3923 34.0334 18.0105 35.9837 19.1803Z" fill="white"/>
+            <defs>
+            <linearGradient id="paint0_linear_2664_277" x1="1.319e-06" y1="0.499999" x2="59.5" y2="59.5" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#AC852C"/>
+            <stop offset="0.495192" stop-color="#F2E69B"/>
+            <stop offset="1" stop-color="#AC852C"/>
+            </linearGradient>
+            </defs>
+            </svg>
+        </div>
     </div>
-    <!-- 客服end -->
+    <!-- 客服渠道 -->
     <div class="layout-body">
         <div id="Header">
             <!-- TopBar -->
@@ -720,6 +605,26 @@
             }
         }
         setMask();
+                  // 新增client按鈕功能
+        $(function () {
+
+            // 切換開關：點按鈕
+            $(document).on('click', '.client-service-btn', function (e) {
+                e.stopPropagation();
+                $('.client-service-group').toggle(); 
+            });
+
+            // 點 group 內部不關閉
+            $(document).on('click', '.client-service-group', function (e) {
+                e.stopPropagation();
+            });
+
+            // 點擊畫面其他地方 → 關閉
+            $(document).on('click', function () {
+                $('.client-service-group').hide();
+            });
+
+        });
     </script>
 </body>
 
